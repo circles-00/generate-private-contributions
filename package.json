@@ -1,0 +1,16 @@
+{
+  "name": "private-contributions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:darknet-00/private-contributions.git",
+  "author": "Nikola Krezeski",
+  "license": "MIT",
+  "scripts": {
+    "start": "node generate-initial-contributions.js",
+    "dev": "nodemon generate-initial-contributions.js"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.7",
+    "prettier": "^2.8.3"
+  }
+}

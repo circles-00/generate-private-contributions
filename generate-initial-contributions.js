@@ -33,7 +33,7 @@ const executeCommit = (commitDate, commitMessage) => {
   })
   execSync(`git add .`, { cwd: currentRepoDirPath })
   execSync(
-    `GIT_COMMITTER_DATE="${commitDate}" git commit --date="${commitDate}" -m "${commitMessage}"`,
+    `GIT_COMMITTER_DATE="${commitDate}" git commit --date="${commitDate}" -m "${commitMessage.replaceAll('"', '')}"`,
     { cwd: currentRepoDirPath }
   )
 }
